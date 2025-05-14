@@ -1,0 +1,47 @@
+# Bond Duration and DV01 Risk Model
+
+**Author:** [Your Name]  
+**Date:** [May 2025]  
+**Tools Used:** Python, Excel  
+**Domain:** Fixed Income Analytics, Interest Rate Risk
+
+---
+
+## Project Overview
+
+This project models a fixed-coupon bond and quantifies its **interest rate risk** by computing:
+
+- **Macaulay Duration**  
+- **Modified Duration**  
+- **DV01 (Dollar Value of 01)** across multiple tenor points on the curve (1Y to 5Y)
+
+The interest rate curve is modeled using spot rates provided at 3.5Y, 4.5Y, and 5.5Y maturities. Interpolation is applied to estimate spot rates for intermediate tenors.
+
+---
+
+## Bond Specifications
+
+| Parameter        | Value                 |
+|------------------|------------------------|
+| Face Value       | ₹1,000,000 (INR)       |
+| Coupon Rate      | 8% p.a. (semi-annual)  |
+| Maturity         | 10 years               |
+| Payment Frequency| Semi-annually         |
+
+---
+
+## Objectives
+
+1. Compute the **present value** of cash flows and the **market price** of the bond.
+2. Estimate the **Macaulay and Modified durations** using discount factors from interpolated rates.
+3. Calculate the **DV01 (Price sensitivity to a 1 basis point rate change)** at:
+   - 1 Year
+   - 2 Years
+   - 3 Years
+   - 4 Years
+   - 5 Years
+
+---
+
+## Repository Structure
+
